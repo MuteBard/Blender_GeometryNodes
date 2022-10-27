@@ -59,16 +59,6 @@
 
 <img src="../images/DEV-02/DEV-02-B7.png" width="1100"/>
 
-<img src="../images/DEV-02/DEV-02-B8.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-B9.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-B10.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-B11.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-B12.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-B13.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-B14.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-B15.png" width="1100"/>
-
-
 ## Combining everything
 
 ### Combining | Join Geometry

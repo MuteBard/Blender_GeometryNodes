@@ -1,6 +1,6 @@
 # DEV-04, How Does Geometry Nodes work
 ### Link:[<https://www.canopy.games/courses/bcs-geometry-nodes-3x/lectures/42544227>]
-#### Tags: []
+#### Tags: [Position, Noise Texture, Math (Subtract), Math (Multiply), Normal, Vector Math (Scale), SetPosition]
 
 ## Fields
 

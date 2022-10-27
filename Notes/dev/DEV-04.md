@@ -2,87 +2,69 @@
 ### Link:[<https://www.canopy.games/courses/bcs-geometry-nodes-3x/lectures/42544227>]
 #### Tags: []
 
-## Topic A
+## Fields
+
+    What is a field? Data that can be different on different parts of our object
+
 <img src="../images/DEV-04/DEV-04-A1.png" width="1100"/>
+
+    In shaders in this noise field, we are computing by pixel. When we move that plane around,
+    we are moving through that noise field. At each point on the mesh, it is evaluating the noise
+    texture.
+
 <img src="../images/DEV-04/DEV-04-A2.png" width="1100"/>
+
+    In Geometry nodes, we can think of it as the same. it is something that is evaluated on the mesh. we are computing per mesh element, and more specifically, per vertex. Each vertex will sample the noise.
+
+    In the case for Geometry node, field are geometry agnostic, the field definition is not linked to specific part of the geometry intrinsically. But rather all of it at the same time.
+
+### Fields Continued
+
+    Nodes used: Position, Noise Texture, Math (Subtract), Math (Multiply)
+
 <img src="../images/DEV-04/DEV-04-A3.png" width="1100"/>
+
+#### Position 
+    to get the position of the geometry (not required in this case, Noise texture does this automatically unseen)
+
+##### Noise Texture 
+    is a range from 0 to 1, which may cause the model to displace itself a bit against the origin, where the 0 the lowest point it the origin. 
+
+#### Math (Subtract)
+    We want to make it so that the noise is balanced on either side of the axis so we Math (Subtract) by .5
+
+#### Math (Multiply)
+    In order to control the amplitude of the peaks and valleys we Math (Multiply)
+
+    Nodes used continued: Normal, Vector Math (Scale), SetPosition
+
 <img src="../images/DEV-04/DEV-04-A4.png" width="1100"/>
+
+#### Normal
+    We can then use our corrected noise field with all of its transformations to affect the Normal vector. The normal vector is a unit vector of 1 the stick out 90 degrees from the surface.
+
+#### Vector Math (Scale)
+
+    We use Scale to be the medium for that operation to happen.
+
+#### Set Position
+
+    All these changes will influence the offset of the Set Position node
+
+## Lines and sockets
+
+    If the lines are dotted, its as if its making a function call to look back to look at all the references to then calculate the response.
+
 <img src="../images/DEV-04/DEV-04-A5.png" width="1100"/>
+
+    Circle = This value is constant throughout the mesh's vertexes
+    Diamond = This is a field and its value may vary per mesh element/ vertex
+    Diamond with a Dot = This can either be constant or a field
+
 <img src="../images/DEV-04/DEV-04-A6.png" width="1100"/>
+
+    Colors!
+
+    The lighter green that you might see everywhere is for Geometry
+
 <img src="../images/DEV-04/DEV-04-A7.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-A8.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-A9.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-A10.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-A11.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-A12.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-A13.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-A14.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-A15.png" width="1100"/>
-
-## Topic B
-<img src="../images/DEV-04/DEV-04-B1.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B2.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B3.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B4.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B5.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B6.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B7.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B8.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B9.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B10.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B11.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B12.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B13.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B14.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-B15.png" width="1100"/>
-
-## Topic C
-<img src="../images/DEV-04/DEV-04-C1.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C2.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C3.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C4.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C5.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C6.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C7.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C8.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C9.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C10.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C11.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C12.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C13.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C14.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-C15.png" width="1100"/>
-
-## Topic D
-<img src="../images/DEV-04/DEV-04-D1.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D2.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D3.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D4.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D5.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D6.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D7.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D8.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D9.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D10.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D11.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D12.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D13.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D14.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-D15.png" width="1100"/>
-
-## Topic E
-<img src="../images/DEV-04/DEV-04-E1.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E2.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E3.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E4.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E5.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E6.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E7.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E8.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E9.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E10.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E11.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E12.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E13.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E14.png" width="1100"/>
-<img src="../images/DEV-04/DEV-04-E15.png" width="1100"/>

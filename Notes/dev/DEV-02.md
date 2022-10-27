@@ -1,32 +1,64 @@
 # DEV-02, A First Scatter
 ### Link:[<https://www.canopy.games/courses/bcs-geometry-nodes-3x/lectures/42544224>]
-#### Tags: []
+#### Tags: [Distribute Points on Faces, Instance on Points, Random Value, Join Geometry]
 
-## Topic A
+## Scatter an Object
+
+    In order to scatter an object you need two things:
+         The positions that we are going to scatter these things on
+         The literal thing, the object to scatter
+
+### Points | Distribute Points on Faces 
+
+    In order for to generate points, random points on a surface is with a node called
+    Distribute Points on Faces
+
 <img src="../images/DEV-02/DEV-02-A1.png" width="1100"/>
 <img src="../images/DEV-02/DEV-02-A2.png" width="1100"/>
+
+### Instancing | Instance on Points
+
+    The next thing that we want to do is make objects exist on those points.
+
 <img src="../images/DEV-02/DEV-02-A3.png" width="1100"/>
 <img src="../images/DEV-02/DEV-02-A4.png" width="1100"/>
 <img src="../images/DEV-02/DEV-02-A5.png" width="1100"/>
 <img src="../images/DEV-02/DEV-02-A6.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-A7.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-A8.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-A9.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-A10.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-A11.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-A12.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-A13.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-A14.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-A15.png" width="1100"/>
 
-## Topic B
+    Make the original object hidden from viewport and render
+
+<img src="../images/DEV-02/DEV-02-A7.png" width="1100"/>
+
+    Better yet, make a new collection of your inputs and then make hidden
+
+<img src="../images/DEV-02/DEV-02-A8.png" width="1100"/>
+
+## Managing Random Rotation and Scale
+
 <img src="../images/DEV-02/DEV-02-B1.png" width="1100"/>
 <img src="../images/DEV-02/DEV-02-B2.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-B3.png" width="1100"/>
+
+### Rotation | Random Value (Vector) 
+
+    The rotation is not intense enough from whats seen here. Rotation is measured in radians, where 2 * pi or tau is considered one rotation.
+    1 across the board as the max as seen here is only a fraction of that.
+
+    Use 2 * pi
 <img src="../images/DEV-02/DEV-02-B4.png" width="1100"/>
+
+    Or Use tau
 <img src="../images/DEV-02/DEV-02-B5.png" width="1100"/>
+
+    Both result into the same thing
 <img src="../images/DEV-02/DEV-02-B6.png" width="1100"/>
+
+### Scale | Random Value (Float) 
+
+    We want the scale to be consistent across x y and z. A vector random would make these all randomize which is not what we want.
+    SO we will use a float random to keep x y and z consistent with each other.
+
 <img src="../images/DEV-02/DEV-02-B7.png" width="1100"/>
+
 <img src="../images/DEV-02/DEV-02-B8.png" width="1100"/>
 <img src="../images/DEV-02/DEV-02-B9.png" width="1100"/>
 <img src="../images/DEV-02/DEV-02-B10.png" width="1100"/>
@@ -36,53 +68,10 @@
 <img src="../images/DEV-02/DEV-02-B14.png" width="1100"/>
 <img src="../images/DEV-02/DEV-02-B15.png" width="1100"/>
 
-## Topic C
+
+## Combining everything
+
+### Combining | Join Geometry
+
 <img src="../images/DEV-02/DEV-02-C1.png" width="1100"/>
 <img src="../images/DEV-02/DEV-02-C2.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C3.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C4.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C5.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C6.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C7.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C8.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C9.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C10.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C11.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C12.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C13.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C14.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-C15.png" width="1100"/>
-
-## Topic D
-<img src="../images/DEV-02/DEV-02-D1.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D2.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D3.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D4.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D5.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D6.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D7.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D8.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D9.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D10.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D11.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D12.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D13.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D14.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-D15.png" width="1100"/>
-
-## Topic E
-<img src="../images/DEV-02/DEV-02-E1.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E2.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E3.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E4.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E5.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E6.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E7.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E8.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E9.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E10.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E11.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E12.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E13.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E14.png" width="1100"/>
-<img src="../images/DEV-02/DEV-02-E15.png" width="1100"/>

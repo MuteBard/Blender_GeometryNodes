@@ -1,6 +1,6 @@
 # DEV-09, Scattering a Collection 
 ### Link:[<https://www.canopy.games/courses/bcs-geometry-nodes-3x/lectures/42544238>]
-#### Tags: [Scattering Points, Collection Info, Instance on Points, Rotate Euler, Random Value (float)]
+#### Tags: [Distribute Points on Faces, Collection Info, Instance on Points, Rotate Euler, Random Value (float)]
 
 ## Scattering Points
 

@@ -1,88 +1,17 @@
 # DEV-10, Wind 1 Animated Noise
 ### Link:[<https://www.canopy.games/courses/bcs-geometry-nodes-3x/lectures/42544230>]
-#### Tags: []
+#### Tags: [noise texture, ]
 
-## Topic A
+## Add in the noise
 <img src="../images/DEV-10/DEV-10-A1.png" width="1100"/>
 <img src="../images/DEV-10/DEV-10-A2.png" width="1100"/>
+
+## Remapping our range values using mapRange
+
 <img src="../images/DEV-10/DEV-10-A3.png" width="1100"/>
 <img src="../images/DEV-10/DEV-10-A4.png" width="1100"/>
+
+## Animating using Scene Time node
+
 <img src="../images/DEV-10/DEV-10-A5.png" width="1100"/>
 <img src="../images/DEV-10/DEV-10-A6.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-A7.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-A8.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-A9.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-A10.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-A11.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-A12.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-A13.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-A14.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-A15.png" width="1100"/>
-
-## Topic B
-<img src="../images/DEV-10/DEV-10-B1.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B2.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B3.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B4.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B5.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B6.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B7.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B8.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B9.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B10.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B11.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B12.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B13.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B14.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-B15.png" width="1100"/>
-
-## Topic C
-<img src="../images/DEV-10/DEV-10-C1.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C2.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C3.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C4.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C5.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C6.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C7.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C8.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C9.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C10.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C11.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C12.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C13.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C14.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-C15.png" width="1100"/>
-
-## Topic D
-<img src="../images/DEV-10/DEV-10-D1.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D2.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D3.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D4.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D5.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D6.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D7.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D8.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D9.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D10.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D11.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D12.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D13.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D14.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-D15.png" width="1100"/>
-
-## Topic E
-<img src="../images/DEV-10/DEV-10-E1.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E2.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E3.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E4.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E5.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E6.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E7.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E8.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E9.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E10.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E11.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E12.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E13.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E14.png" width="1100"/>
-<img src="../images/DEV-10/DEV-10-E15.png" width="1100"/>

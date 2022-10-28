@@ -8,6 +8,8 @@
 
 ## Remapping our range values using mapRange
 
+    Think of it as the geometry node "Color Ramp"
+
 <img src="../images/DEV-10/DEV-10-A3.png" width="1100"/>
 <img src="../images/DEV-10/DEV-10-A4.png" width="1100"/>
 
